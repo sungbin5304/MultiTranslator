@@ -1,6 +1,6 @@
 ![Logo](https://repository-images.githubusercontent.com/254318292/09b52580-7a8f-11ea-9ebb-2e58f3926c59)
 
-# License
+# License [[GPL3]](https://github.com/sungbin5304/MultiTranslator/blob/master/LICENSE)
 ```
             MultiTranslator  Copyright (C) 2020 SungBin
     This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'.
