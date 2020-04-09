@@ -18,10 +18,6 @@ object TranslateUtils {
         StrictMode.setThreadPolicy(policy)
     }
 
-    private const val PAPAGO_ID = "2LDYOkcySex_5zGbnaNX"
-    private const val PAPAGO_SECRET = "kFfHyLUavV"
-    private const val KAKAO_KEY = "131cba0c6fe849f1101b8f935e343a84"
-
     fun papago(source: String, target: String, string: String): String {
         return try {
             val text = string.replace("\n", "§").replace("\\n", "§")
