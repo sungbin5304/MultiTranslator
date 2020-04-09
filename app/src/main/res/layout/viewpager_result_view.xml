@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/margin_default"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    tools:context=".MainActivity"
+    tools:ignore="MissingConstraints,PrivateResource" >
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:textStyle="bold"
+        android:fontFamily="@font/nanumgothic"
+        android:textSize="18sp"
+        android:textColor="@color/colorBlack"
+        android:text="@string/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</ScrollView>

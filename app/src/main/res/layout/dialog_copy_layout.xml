@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_view">
+
+    <LinearLayout
+        android:paddingTop="@dimen/margin_default"
+        android:paddingBottom="@dimen/margin_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginBottom="@dimen/margin_twice"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            android:fontFamily="@font/nanumgothic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_copy"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/btn_copy_papago"
+            android:fontFamily="@font/nanumgothic"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textStyle="bold"
+            android:paddingStart="@dimen/margin_default"
+            android:paddingEnd="@dimen/margin_default"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="@string/copy_papago"
+            android:background="@drawable/rounded_button"/>
+
+        <Button
+            android:id="@+id/btn_copy_google"
+            android:layout_marginTop="@dimen/margin_default"
+            android:fontFamily="@font/nanumgothic"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:paddingStart="@dimen/margin_default"
+            android:paddingEnd="@dimen/margin_default"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="@string/copy_google"
+            android:background="@drawable/rounded_button"/>
+
+        <Button
+            android:id="@+id/btn_copy_daum"
+            android:layout_marginTop="@dimen/margin_default"
+            android:fontFamily="@font/nanumgothic"
+            android:paddingStart="@dimen/margin_default"
+            android:paddingEnd="@dimen/margin_default"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="@string/copy_daum"
+            android:background="@drawable/rounded_button"/>
+
+    </LinearLayout>
+
+</ScrollView>

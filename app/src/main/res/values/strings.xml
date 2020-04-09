@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Multi Translator [Beta]</string>
+
+    <string name="text_clear">text clear</string>
+    <string name="sound_to_text">sound_to_text</string>
+    <string name="text_to_sound">text to sound</string>
+    <string name="input_translate_string">번역할 내용을 입력하세요…</string>
+    <string name="string_translate">번역</string>
+    <string name="string_settings">settings</string>
+    <string name="string_language">language</string>
+    <string name="input_language">입력받은 언어 선택</string>
+    <string name="choose_translate_language">동시 번역 언어 선택</string>
+    <string name="choose_language">언어 선택</string>
+    <string name="choose_done">설정 완료</string>
+    <string name="need_language_setting_first">먼저 언어 설정을 해 주세요.</string>
+    <string name="process_translate">번역중...</string>
+    <string name="string_copy">복사</string>
+    <string name="copy_papago">파파고 번역 복사</string>
+    <string name="copy_google">구글 번역 복사</string>
+    <string name="copy_daum">다음 번역 복사</string>
+    <string name="choose_copy">복사할 번역을 선택하세요</string>
+    <string name="process_make">만드는중...</string>
+    <string name="need_translate_first">먼저 번역을 진행해 주세요.</string>
+    <string name="opensource_license">오픈소스 라이선스</string>
+    <string name="string_cancel">닫기</string>
+    <string name="librarise_license">License for Libraries</string>
+</resources>

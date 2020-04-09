@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_view">
+
+    <LinearLayout
+        android:paddingTop="@dimen/margin_default"
+        android:paddingBottom="@dimen/margin_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:fontFamily="@font/nanumgothic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="모든 번역에는 버그가 있을 수 있어요!\n\n설정 기능은 만드는 중..."
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/colorBlack"
+            tools:ignore="HardcodedText" />
+
+        <View
+            android:layout_marginTop="@dimen/margin_default"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorGray" />
+
+        <Button
+            android:id="@+id/btn_opensource"
+            android:layout_marginTop="@dimen/margin_default"
+            android:fontFamily="@font/nanumgothic"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:paddingStart="@dimen/margin_default"
+            android:paddingEnd="@dimen/margin_default"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="@string/opensource_license"
+            android:background="@drawable/rounded_button"/>
+
+        <TextView
+            android:layout_marginTop="@dimen/margin_triple"
+            android:fontFamily="@font/nanumgothic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Copyright (C) 2020 SungBin.\nAll rights reserved."
+            android:gravity="center"
+            android:textSize="13sp"
+            android:textColor="@color/colorGray"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_view">
+
+    <LinearLayout
+        android:paddingTop="@dimen/margin_default"
+        android:paddingBottom="@dimen/margin_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:fontFamily="@font/nanumgothic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/input_language"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/colorBlack"/>
+
+        <Button
+            android:paddingStart="@dimen/margin_default"
+            android:paddingEnd="@dimen/margin_default"
+            android:id="@+id/btn_choose_input_language"
+            android:layout_marginTop="@dimen/margin_half"
+            android:fontFamily="@font/nanumgothic"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="@string/choose_language"
+            android:background="@drawable/rounded_button"/>
+
+        <View
+            android:layout_marginTop="@dimen/margin_default"
+            android:layout_marginBottom="@dimen/margin_default"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorGray"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_translate_language"
+            android:fontFamily="@font/nanumgothic"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"/>
+
+        <Button
+            android:paddingStart="@dimen/margin_default"
+            android:paddingEnd="@dimen/margin_default"
+            android:id="@+id/btn_choose_translate_language"
+            android:layout_marginTop="@dimen/margin_half"
+            android:fontFamily="@font/nanumgothic"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="@string/choose_language"
+            android:background="@drawable/rounded_button"/>
+
+        <View
+            android:layout_marginTop="@dimen/margin_default"
+            android:layout_marginBottom="@dimen/margin_default"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorGray"/>
+
+        <Button
+            android:paddingStart="@dimen/margin_default"
+            android:paddingEnd="@dimen/margin_default"
+            android:id="@+id/btn_choose_done"
+            android:fontFamily="@font/nanumgothic"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="@string/choose_done"
+            android:background="@drawable/rounded_button"/>
+
+    </LinearLayout>
+
+</ScrollView>

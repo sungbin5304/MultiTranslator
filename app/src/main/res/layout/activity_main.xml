@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="UseCompoundDrawables,RtlSymmetry,PrivateResource,Autofill,TextFields">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:fontFamily="@font/nanumgothic"
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:minHeight="?actionBarSize"
+                    android:padding="@dimen/margin_default"
+                    android:text="@string/app_name"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+
+                <LinearLayout
+                    android:paddingEnd="@dimen/margin_default"
+                    android:gravity="end"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_language"
+                        android:layout_marginEnd="@dimen/margin_default"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/string_language"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_language_white_24dp"/>
+
+                    <ImageView
+                        android:id="@+id/iv_setting"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/string_settings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_settings_white_24dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.ogaclejapan.smarttablayout.SmartTabLayout
+                android:id="@+id/tab"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_triple"
+                android:clipToPadding="false"
+                app:stl_customTabTextLayoutId="@layout/custom_tab_icon_and_text"
+                app:stl_customTabTextViewId="@id/tab_text"
+                app:stl_indicatorAlwaysInCenter="true"
+                app:stl_defaultTabTextColor="@color/colorWhite"
+                app:stl_defaultTabTextHorizontalPadding="@dimen/margin_default"
+                app:stl_dividerColor="@android:color/transparent"
+                app:stl_dividerThickness="0dp"
+                app:stl_indicatorColor="@color/colorPrimaryDark"
+                app:stl_indicatorCornerRadius="@dimen/margin_default"
+                app:stl_indicatorGravity="center"
+                app:stl_indicatorInterpolation="smart"
+                app:stl_indicatorThickness="36dp"
+                app:stl_underlineColor="@android:color/transparent"
+                app:stl_underlineThickness="0dp" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:orientation="vertical">
+
+            <androidx.viewpager.widget.ViewPager
+                android:overScrollMode="never"
+                android:layout_weight="1"
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:paddingTop="@dimen/margin_half"
+                    android:paddingBottom="@dimen/margin_half"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="@dimen/margin_default"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_translate"
+                        android:layout_marginEnd="@dimen/margin_default"
+                        android:contentDescription="@string/string_translate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_translate_black_24dp" />
+
+                    <ImageView
+                        android:id="@+id/iv_copy"
+                        android:layout_marginEnd="@dimen/margin_default"
+                        android:contentDescription="@string/string_copy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_content_copy_black_24dp" />
+
+                    <ImageView
+                        android:id="@+id/iv_tts"
+                        android:contentDescription="@string/text_to_sound"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_volume_up_black_24dp" />
+
+                    <ImageView
+                        android:id="@+id/iv_mic"
+                        android:layout_marginStart="@dimen/margin_default"
+                        android:contentDescription="@string/sound_to_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_mic_black_24dp" />
+
+                    <ImageView
+                        android:id="@+id/iv_clear_text"
+                        android:layout_marginStart="@dimen/margin_default"
+                        android:contentDescription="@string/text_clear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_clear_black_24dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorGray"/>
+
+                <EditText
+                    android:id="@+id/et_input"
+                    android:fontFamily="@font/nanumgothic"
+                    android:padding="@dimen/margin_default"
+                    android:gravity="top"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/input_translate_string"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
